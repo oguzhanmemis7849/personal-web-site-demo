@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://www.unpkg.com/browse/boxicons@2.1.1/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <title>Kişisel Portfolyo</title>
+  </head>
+  <body>
+    <header id="header" class="l-header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Oğuzhan</a>
+
+        <div id="nav-menu" class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Hakkımda</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Çalışmalar</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">İletişim</a>
+            </li>
+            <li class="nav__item">
+              <a href="#cv" class="nav__link">CV</a>
+            </li>
+          </ul>
+
+          <div class="__dark-mode">
+            <label id="switchButton" class="switch">
+              <input type="checkbox" />
+              <span id="theme-button" class="slider round"></span>
+            </label>
+            <!-- <i id="theme-button" class="bx bx-moon bx-sun">Dark/Light</i> -->
+          </div>
+        </div>
+
+        <div id="nav-toggle" class="nav__toggle">
+          <i class="bx bx-grid-alt">≡</i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="content">
+        <div class="text">
+          <h1>
+            Hello, I am <br />
+            junior <span>UI/UX</span> <br />
+            developer.
+          </h1>
+          <p>Bana ulaşmak için mailinizi bırakabilirsiniz.</p>
+          <div class="field">
+            <label>
+              <form action="#work">
+                <input id="eMail" type="text" placeholder="E-mail Adress" />
+                <button onclick="getApi()" id="eMail-id" type="submit">Subscribe</button>
+                <textarea name="textArea" id="textAreaID" cols="30" rows="10"></textarea>
+              </form>
+            </label>
+          </div>
+          <p>&#127881; Buradan açık kaynaklı projelerime erişebilirsiniz.</p>
+        </div>
+
+        <div class="person">
+          <div class="__BG">
+            <img src="./images/foto.png" alt="person-image" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
