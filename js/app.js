@@ -50,12 +50,11 @@ function eMailValue(){
 
 function getApi(e) { 
     // e.preventDefault();
-    $.ajax({url: "http://localhost:3000/api/cities", success: function(result){
-        var a = result.map(item => {
-            document.getElementById("textAreaID").innerHTML = "City: " + item.name + "\n" + "Country: " + item.country;
-        })
+    $.ajax({
+     url: "http://localhost:3000/api/mails/add",
+     type : "POST",
+     data : {eMail: document.getElementById("eMail").value},
+     success: function(result){
+        alert("Başarılı");
       }});
 }
-
-
-// document.getElementById("demo").innerHTML = newArr;
